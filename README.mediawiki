@@ -1,5 +1,3 @@
-== Aegisub Build with DepCTRL .bulan ==
-
 == Skrip Otomisasi ==
 
 === yudha.SilihOtomatis ===
