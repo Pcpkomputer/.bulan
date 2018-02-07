@@ -6,7 +6,7 @@ script_namespace="yudha.SilihOtomatis"
 
 local haveDepCtrl,DependencyControl,depRec=pcall(require,"l0.DependencyControl")
 if haveDepCtrl then
-    script_version="1.1.0"
+    script_version="1.1.1"
     depRec=DependencyControl{feed="https://raw.githubusercontent.com/Pcpkomputer/.bulan/master/DependencyControl.json"}
 end
 
