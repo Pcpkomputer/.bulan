@@ -1,7 +1,13 @@
 script_name="Silih Otomatis"
 script_description = "Melakukan aksi silih pada dialog."
 script_author      = "Padang Perwira Yudha"
-script_version     = "1.0.0"
+script_version     = "1.1.0"
+
+local haveDepCtrl,DependencyControl,depRec=pcall(require,"l0.DependencyControl")
+if haveDepCtrl then
+    script_version="1.1.0"
+    depRec=DependencyControl{feed="https://raw.githubusercontent.com/Pcpkomputer/.bulan/master/DependencyControl.json"}
+end
 
 function silih(bintang, subs)
 	local pola = "{%"..bintang.."}([^{]*){%"..bintang.."([^%"..bintang.."]?[^}]*)}"
