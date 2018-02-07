@@ -10,3 +10,5 @@ Skrip ini sering saya gunakan dalam pembuatan skrip lokalisasi dan honorifik, un
 === yudha.KBBI ===
 
 Skrip yang berguna untuk melakukan perubahan pada ejaan yang sering salah ditulis, pengembangan selanjutnya [2.0.0] akan diberikan function berupa count-line yang berupa report dari keseluruhan line yang salah.
+
+Untuk database KBBI bisa dilihat di sini: https://github.com/Pcpkomputer/.bulan/blob/master/yudha.KBBI.lua
