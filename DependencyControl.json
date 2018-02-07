@@ -1,0 +1,37 @@
+{
+  "dependencyControlFeedFormatVersion": "0.2.0",
+  "name": "yudha Automation Scripts",
+  "description": "Tertiary repository for most of yudha automation scripts.",
+  "baseUrl": "https://github.com/Pcpkomputer/.bulan",
+  "fileBaseUrl": "https://raw.githubusercontent.com/Pcpkomputer/.bulan/@{channel}/@{namespace}",
+  "url": "@{baseUrl}",
+  "maintainer": "Pcpkomputer",
+  "macros": {
+    
+    "yudha.SilihOtomatis": {
+      "url": "@{baseUrl}#@{namespace}",
+      "author": "Padang Perwira Yudha",
+      "name": "Silih Otomatis",
+      "description": "Melakukan aksi silih pada dialog.",
+      "channels": {
+        "master": {
+          "version": "1.0.0",
+          "released": "2018-02-07",
+          "default": true,
+          "files": [
+            {
+              "name": ".lua",
+              "url": "@{fileBaseUrl}@{fileName}",
+              "sha1": "42d9f67ac322c8f1e77cc9d5525965680da00b09"
+            }
+          ]
+        }
+      },
+      "changelog": {
+        "1.1.0": ["Menambahkan DependencyControl"]
+        "1.0.0": ["Versi Awal & Pengembangan"]
+      }
+    }
+           
+  }
+}
