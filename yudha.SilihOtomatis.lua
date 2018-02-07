@@ -1,7 +1,7 @@
 script_name="Silih Otomatis"
-script_description = "Melakukan aksi silih pada dialog."
+script_description = "Melakukan aksi silih pada dialog"
 script_author      = "Padang Perwira Yudha"
-script_version     = "1.1.0"
+script_version     = "1.1.1"
 script_namespace="yudha.SilihOtomatis"
 
 local haveDepCtrl,DependencyControl,depRec=pcall(require,"l0.DependencyControl")
@@ -47,7 +47,7 @@ end
 
 function silih_otomatis(subs, selected, active)
   silih("*", subs)
-  aegisub.set_undo_point("Silih Honorifik")
+  aegisub.set_undo_point("script_name")
 end
 
 if haveDepCtrl then depRec:registerMacro(silih_otomatis) else aegisub.register_macro(script_name,script_description,silih_otomatis) end
