@@ -2,6 +2,7 @@ script_name="Silih Otomatis"
 script_description = "Melakukan aksi silih pada dialog."
 script_author      = "Padang Perwira Yudha"
 script_version     = "1.1.0"
+script_namespace="yudha.SilihOtomatis"
 
 local haveDepCtrl,DependencyControl,depRec=pcall(require,"l0.DependencyControl")
 if haveDepCtrl then
