@@ -15,19 +15,20 @@
       "description": "Melakukan aksi silih pada dialog.",
       "channels": {
         "master": {
-          "version": "1.1.0",
+          "version": "1.1.1",
           "released": "2018-02-07",
           "default": true,
           "files": [
             {
               "name": ".lua",
               "url": "@{fileBaseUrl}@{fileName}",
-              "sha1": "f24a937dfab3511716624133ce52803847ab3c84"
+              "sha1": "e06ef9043cd77749e48f5a350f77c4860ba27678"
             }
           ]
         }
       },
       "changelog": {
+        "1.1.1": ["Mengetes Responsif DependencyControl"]
         "1.1.0": ["Menambahkan DependencyControl"]
         "1.0.0": ["Versi Awal & Pengembangan"]
       }
