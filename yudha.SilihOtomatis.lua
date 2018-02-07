@@ -44,13 +44,11 @@ for i=1, #subs do
 
 end
 
-function honorifics(subs, selected, active)
+function silih_otomatis(subs, selected, active)
   silih("*", subs)
   aegisub.set_undo_point("Silih Honorifik")
 end
 
-aegisub.register_macro(
-  "Silih Otomatis",
-  "Memindahkan dialog dengan karakter asterisk (*)",
-  honorifics
-)
+if haveDepCtrl then depRec:registerMacro(silih_otomatis) else aegisub.register_macro(script_name,script_description,silih_otomatis) end
+
+
