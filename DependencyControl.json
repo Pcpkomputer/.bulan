@@ -15,19 +15,20 @@
       "description": "yeah this script is literally unnecessary",
       "channels": {
         "master": {
-          "version": "1.0.0",
+          "version": "2.0.0",
           "released": "2018-02-08",
           "default": true,
           "files": [
             {
               "name": ".lua",
               "url": "@{fileBaseUrl}@{fileName}",
-              "sha1": "13967A3761243FBA0B1577B1B512552A85B36332"
+              "sha1": "5266740EA9EF436ED898765ADD8F91A33A63B0EF"
             }
           ]
         }
       },
       "changelog": {
+        "2.0.0": ["Penambahan fungsi make_chapter"]
         "1.0.0": ["Mengunggah ke repository"]
       }
     },
