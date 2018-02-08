@@ -1,5 +1,9 @@
 # Skrip Otomisasi
 
+## yudha.UnnecessaryChapter
+### why? Because i'm lazzy as fuck
+![alt text](https://scontent-sit4-1.xx.fbcdn.net/v/t1.0-9/27545666_1999694390046707_1563691307904350182_n.jpg?oh=bfb7400d17d14af072419269fd6ddd08&oe=5AE1E7D6 "when lazinezz bring innovation")
+
 ## yudha.SilihOtomatis
 
 Skrip yang berguna untuk menukar suatu teks berdasarkan suatu pola dari Regular Expression;
