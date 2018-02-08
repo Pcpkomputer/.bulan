@@ -8,6 +8,30 @@
   "maintainer": "Pcpkomputer",
   "macros": {
     
+     "yudha.UnnecessaryChapter": {
+      "url": "@{baseUrl}#@{namespace}",
+      "author": "Padang Perwira Yudha",
+      "name": "Unnecesarry Chapter Tools",
+      "description": "yeah this script is literally unnecessary",
+      "channels": {
+        "master": {
+          "version": "1.0.0",
+          "released": "2018-02-08",
+          "default": true,
+          "files": [
+            {
+              "name": ".lua",
+              "url": "@{fileBaseUrl}@{fileName}",
+              "sha1": "13967A3761243FBA0B1577B1B512552A85B36332"
+            }
+          ]
+        }
+      },
+      "changelog": {
+        "1.0.0": ["Mengunggah ke repository"]
+      }
+    },
+    
     "yudha.SilihOtomatis": {
       "url": "@{baseUrl}#@{namespace}",
       "author": "Padang Perwira Yudha",
