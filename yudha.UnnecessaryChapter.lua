@@ -1,12 +1,12 @@
 script_name="Unnecesarry Chapter Tools"
 script_description = "yeah this script is literally unnecessary"
 script_author      = "Padang Perwira Yudha"
-script_version     = "2.0.2"
+script_version     = "2.0.3"
 script_namespace="yudha.UnnecessaryChapter"
 
 local haveDepCtrl,DependencyControl,depRec=pcall(require,"l0.DependencyControl")
 if haveDepCtrl then
-    script_version="2.0.2"
+    script_version="2.0.3"
     depRec=DependencyControl{feed="https://raw.githubusercontent.com/Pcpkomputer/.bulan/master/DependencyControl.json"}
 end
 
@@ -127,6 +127,13 @@ function seleksi(subs, sel)
 		:gsub("\\bagian2","{["..res.grup.. "] " ..res.nama.. " - " ..res.episode..": Bagian 2}")
 		:gsub("\\lagupenutup","{["..res.grup.. "] " ..res.nama.. " - " ..res.episode..": Lagu Penutup}")
 		:gsub("\\cuplikan","{["..res.grup.. "] " ..res.nama.. " - " ..res.episode..": Cuplikan}")
+		-- 2.0.3--
+		:gsub("prolog","{["..res.grup.. "] " ..res.nama.. " - " ..res.episode..": Prolog}")
+		:gsub("lagupembuka","{["..res.grup.. "] " ..res.nama.. " - " ..res.episode..": Lagu Pembuka}")
+		:gsub("bagian1","{["..res.grup.. "] " ..res.nama.. " - " ..res.episode..": Bagian 1}")
+		:gsub("bagian2","{["..res.grup.. "] " ..res.nama.. " - " ..res.episode..": Bagian 2}")
+		:gsub("lagupenutup","{["..res.grup.. "] " ..res.nama.. " - " ..res.episode..": Lagu Penutup}")
+		:gsub("cuplikan","{["..res.grup.. "] " ..res.nama.. " - " ..res.episode..": Cuplikan}")
 		line.actor="chapter"
 		line.effect="chapter"
 		line.text=text
@@ -141,7 +148,7 @@ GUI=
 {
 	{x=0,y=0,width=1,height=1,class="label",label="Documentation:",},
 	{x=1,y=0,width=1,height=1,class="label",label="/github/pcpkomputer/.bulan",},
-	{x=3,y=0,width=1,height=1,class="label",label="Unnecessary Chapter Tools v2.0.2",},
+	{x=3,y=0,width=1,height=1,class="label",label="Unnecessary Chapter Tools v2.0.3",},
     {x=0,y=1,width=1,height=1,class="label",label="Nama Grup :",},
     {x=1,y=1,width=1,height=1,class="edit",name="grup",},
 	{x=0,y=2,width=1,height=1,class="label",label="Nama Acara :",},
