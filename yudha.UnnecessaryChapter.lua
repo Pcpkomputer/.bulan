@@ -1,12 +1,12 @@
 script_name="Unnecesarry Chapter Tools"
 script_description = "yeah this script is literally unnecessary"
 script_author      = "Padang Perwira Yudha"
-script_version     = "2.0.1"
+script_version     = "2.0.2"
 script_namespace="yudha.UnnecessaryChapter"
 
 local haveDepCtrl,DependencyControl,depRec=pcall(require,"l0.DependencyControl")
 if haveDepCtrl then
-    script_version="2.0.1"
+    script_version="2.0.2"
     depRec=DependencyControl{feed="https://raw.githubusercontent.com/Pcpkomputer/.bulan/master/DependencyControl.json"}
 end
 
@@ -164,13 +164,13 @@ if P=="Terapkan" then seleksi(subs, sel) end
     return sel,act
 end
 
-function unnecessary(subs, sel)
+function unnecessarychapter(subs, sel)
     main(subs,sel)
     aegisub.set_undo_point(script_name)
     return sel
 end
 
 
-if haveDepCtrl then depRec:registerMacro(unnecessary) else aegisub.register_macro(script_name,script_description,unnecessary) end
+if haveDepCtrl then depRec:registerMacro(unnecessarychapter) else aegisub.register_macro(script_name,script_description,unnecessarychapter) end
 
 
