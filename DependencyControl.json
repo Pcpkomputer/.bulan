@@ -15,7 +15,7 @@
       "description": "yeah this script is literally unnecessary",
       "channels": {
         "master": {
-          "version": "2.0.2",
+          "version": "2.0.3",
           "released": "2018-02-08",
           "default": true,
           "files": [
