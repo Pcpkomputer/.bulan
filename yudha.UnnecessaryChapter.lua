@@ -141,7 +141,7 @@ GUI=
 {
 	{x=0,y=0,width=1,height=1,class="label",label="Documentation:",},
 	{x=1,y=0,width=1,height=1,class="label",label="/github/pcpkomputer/.bulan",},
-	{x=3,y=0,width=1,height=1,class="label",label="Unnecessary Chapter Tools v2.0.1",},
+	{x=3,y=0,width=1,height=1,class="label",label="Unnecessary Chapter Tools v2.0.2",},
     {x=0,y=1,width=1,height=1,class="label",label="Nama Grup :",},
     {x=1,y=1,width=1,height=1,class="edit",name="grup",},
 	{x=0,y=2,width=1,height=1,class="label",label="Nama Acara :",},
