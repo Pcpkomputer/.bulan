@@ -11,7 +11,7 @@
      "yudha.UnnecessaryChapter": {
       "url": "@{baseUrl}#@{namespace}",
       "author": "Padang Perwira Yudha",
-      "name": "Unnecesarry Chapter Tools",
+      "name": "Unnecessarry Chapter",
       "description": "yeah this script is literally unnecessary",
       "channels": {
         "master": {
