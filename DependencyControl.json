@@ -22,12 +22,13 @@
             {
               "name": ".lua",
               "url": "@{fileBaseUrl}@{fileName}",
-              "sha1": "91F769F73931565F025903E9A40E3111EF70F7C4"
+              "sha1": "4E48A40C558DDCECC5B56BD9084D93D1798322FB"
             }
           ]
         }
       },
       "changelog": {
+        "2.0.3": ["Penambahan kata replacement baru(2)"],
         "2.0.2": ["Penambahan kata replacement baru"],
         "2.0.0": ["Penambahan fungsi make_chapter"],
         "1.0.0": ["Mengunggah ke repository"]
