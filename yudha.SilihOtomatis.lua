@@ -45,6 +45,7 @@ for i=1, #subs do
 
 end
 
+-- fungsi pola
 function bintang(subs, selected, active)
   silih("*", subs)
   aegisub.set_undo_point("script_name")
