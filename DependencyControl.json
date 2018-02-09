@@ -28,8 +28,8 @@
         }
       },
       "changelog": {
-        "2.0.1": ["Penambahan kata replacement baru"]
-        "2.0.0": ["Penambahan fungsi make_chapter"]
+        "2.0.1": ["Penambahan kata replacement baru"],
+        "2.0.0": ["Penambahan fungsi make_chapter"],
         "1.0.0": ["Mengunggah ke repository"]
       }
     },
