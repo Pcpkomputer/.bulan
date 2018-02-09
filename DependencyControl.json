@@ -42,20 +42,21 @@
       "description": "Melakukan aksi silih pada dialog",
       "channels": {
         "master": {
-          "version": "1.1.1",
+          "version": "2.0.0",
           "released": "2018-02-07",
           "default": true,
           "files": [
             {
               "name": ".lua",
               "url": "@{fileBaseUrl}@{fileName}",
-              "sha1": "E14BBA88A0FAA99868B7273276D0A6473493CADB"
+              "sha1": "2FB9C4BACFF2E7FA61060594DCC9445167C569FB"
             }
           ]
         }
       },
       "changelog": {
-        "1.1.1": ["Added DependencyControl"]
+        "2.0.0": ["Penambahan GUI dan fungsi templater"],
+        "1.1.1": ["Penambahan DependencyControl"]
       }
     },
     
