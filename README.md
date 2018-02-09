@@ -11,7 +11,8 @@ Skrip yang berguna untuk menukar suatu teks berdasarkan suatu pola dari Regular 
 Contoh : {*}Mas Padang{*Padang-kun}
 
 Skrip ini sering saya gunakan dalam pembuatan skrip lokalisasi dan honorifik, untuk pengembangan selanjutnya akan dibuatkan GUI yang diberikan checklist untuk memilih karakter yang digunakan * atau / atau % dsb.
-
+### v2.0.0
+![alt text](https://scontent.fsub5-1.fna.fbcdn.net/v/t1.0-9/27751720_2001140006568812_5683222731135946573_n.jpg?oh=554cce9c85a0f5e47a251a3adba47325&oe=5B14FA55 "when lazinezz bring innovation")
 ## yudha.KBBI
 
 ![alt text](https://scontent-sit4-1.xx.fbcdn.net/v/t1.0-9/27752502_1998997476783065_6971505429113667725_n.jpg?oh=31a2fe3ef4ec83fa4d67f7c51dedf73f&oe=5ADA66D4 "aaaaaa")
