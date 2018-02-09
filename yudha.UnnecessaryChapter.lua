@@ -1,12 +1,12 @@
 script_name="Unnecesarry Chapter Tools"
 script_description = "yeah this script is literally unnecessary"
 script_author      = "Padang Perwira Yudha"
-script_version     = "2.0.0"
+script_version     = "2.0.1"
 script_namespace="yudha.UnnecessaryChapter"
 
 local haveDepCtrl,DependencyControl,depRec=pcall(require,"l0.DependencyControl")
 if haveDepCtrl then
-    script_version="2.0.0"
+    script_version="2.0.1"
     depRec=DependencyControl{feed="https://raw.githubusercontent.com/Pcpkomputer/.bulan/master/DependencyControl.json"}
 end
 
@@ -120,6 +120,13 @@ function seleksi(subs, sel)
 		:gsub("\\4","{["..res.grup.. "] " ..res.nama.. " - " ..res.episode..": Bagian 2}")
 		:gsub("\\5","{["..res.grup.. "] " ..res.nama.. " - " ..res.episode..": Lagu Penutup}")
 		:gsub("\\6","{["..res.grup.. "] " ..res.nama.. " - " ..res.episode..": Cuplikan}")
+		-- 2.0.1--
+		:gsub("\\prolog","{["..res.grup.. "] " ..res.nama.. " - " ..res.episode..": Prolog}")
+		:gsub("\\lagupembuka","{["..res.grup.. "] " ..res.nama.. " - " ..res.episode..": Lagu Pembuka}")
+		:gsub("\\bagian1","{["..res.grup.. "] " ..res.nama.. " - " ..res.episode..": Bagian 1}")
+		:gsub("\\bagian2","{["..res.grup.. "] " ..res.nama.. " - " ..res.episode..": Bagian 2}")
+		:gsub("\\lagupenutup","{["..res.grup.. "] " ..res.nama.. " - " ..res.episode..": Lagu Penutup}")
+		:gsub("\\cuplikan","{["..res.grup.. "] " ..res.nama.. " - " ..res.episode..": Cuplikan}")
 		line.actor="chapter"
 		line.effect="chapter"
 		line.text=text
