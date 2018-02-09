@@ -22,7 +22,7 @@
             {
               "name": ".lua",
               "url": "@{fileBaseUrl}@{fileName}",
-              "sha1": "F3A61530421166C8DD791B442D35FA69C72C4B84"
+              "sha1": "0B0D6C2708C96F41ED0E464DFD4A960E85E32514"
             }
           ]
         }
