@@ -1,12 +1,12 @@
 script_name="Silih Otomatis"
 script_description = "Melakukan aksi silih pada dialog"
 script_author      = "Padang Perwira Yudha"
-script_version     = "2.0.0"
+script_version     = "2.0.1"
 script_namespace="yudha.SilihOtomatis"
 
 local haveDepCtrl,DependencyControl,depRec=pcall(require,"l0.DependencyControl")
 if haveDepCtrl then
-    script_version="2.0.0"
+    script_version="2.0.1"
     depRec=DependencyControl{feed="https://raw.githubusercontent.com/Pcpkomputer/.bulan/master/DependencyControl.json"}
 end
 
@@ -130,7 +130,7 @@ function main(subs,sel)
 ADD=aegisub.dialog.display
 GUI=
 {
-	{x=0,y=0,width=1,height=1,class="label",label="[v2.0.0]",},
+	{x=0,y=0,width=1,height=1,class="label",label="[v2.0.1]",},
 	{x=1,y=0,width=1,height=1,class="label",label="[//]",},
 	{x=2,y=0,width=1,height=1,class="label",label="[Kalimat Awal]",},
 	{x=3,y=0,width=1,height=1,class="label",label="[//]",},
@@ -147,13 +147,13 @@ GUI=
 	{x=1,y=4,width=1,height=1,class="checkbox",name="la4",},
 	{x=1,y=5,width=1,height=1,class="checkbox",name="la5",},
 	--
-	{x=2,y=1,width=1,height=1,class="edit",name="ed1",},
+	{x=2,y=1,width=1,height=1,class="edit",name="ed1", value="Yudha%-san",},
 	{x=3,y=1,width=1,height=1,class="label",label=">",},
-	{x=4,y=1,width=6,height=1,class="edit",name="ed1go",},
+	{x=4,y=1,width=6,height=1,class="edit",name="ed1go", value="Yudha",},
 
-	{x=2,y=2,width=1,height=1,class="edit",name="ed2",},
+	{x=2,y=2,width=1,height=1,class="edit",name="ed2", value="Yudha",},
 	{x=3,y=2,width=1,height=1,class="label",label=">",},
-	{x=4,y=2,width=6,height=1,class="edit",name="ed2go",},
+	{x=4,y=2,width=6,height=1,class="edit",name="ed2go", value="Yudha%-san",},
 
 	{x=2,y=3,width=1,height=1,class="edit",name="ed3",},
 	{x=3,y=3,width=1,height=1,class="label",label=">",},
