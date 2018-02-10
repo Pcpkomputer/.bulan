@@ -1,12 +1,12 @@
 script_name="Unnecesarry Chapter Tools"
 script_description = "yeah this script is literally unnecessary"
 script_author      = "Padang Perwira Yudha"
-script_version     = "2.1.3"
+script_version     = "2.1.4"
 script_namespace="yudha.UnnecessaryChapter"
 
 local haveDepCtrl,DependencyControl,depRec=pcall(require,"l0.DependencyControl")
 if haveDepCtrl then
-    script_version="2.1.3"
+    script_version="2.1.4"
     depRec=DependencyControl{feed="https://raw.githubusercontent.com/Pcpkomputer/.bulan/master/DependencyControl.json"}
 end
 
@@ -39,7 +39,7 @@ function chopters(subs,sel)
 	euid=2013
 	chptrs={}
 	subchptrs={}
-	if res.lang=="" then clang="eng" else clang=res.lang end
+	local clang="eng"
     for i=1,#subs do
       if subs[i].class=="info" then
 	if subs[i].key=="Video File" then videoname=subs[i].value videoname=videoname:gsub("%.mkv","") end
@@ -205,7 +205,7 @@ GUI=
 {
 	{x=0,y=0,width=1,height=1,class="label",label="Documentation:",},
 	{x=1,y=0,width=1,height=1,class="label",label="/github/pcpkomputer/.bulan",},
-	{x=3,y=0,width=1,height=1,class="label",label="Unnecessary Chapter Tools v2.1.3",},
+	{x=3,y=0,width=1,height=1,class="label",label="Unnecessary Chapter Tools v2.1.4",},
     {x=0,y=1,width=1,height=1,class="label",label="Nama Grup :",},
     {x=1,y=1,width=1,height=1,class="edit",name="grup",},
 	{x=0,y=2,width=1,height=1,class="label",label="Nama Acara :",},
