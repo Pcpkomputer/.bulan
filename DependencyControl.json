@@ -51,12 +51,13 @@
             {
               "name": ".lua",
               "url": "@{fileBaseUrl}@{fileName}",
-              "sha1": "2FB9C4BACFF2E7FA61060594DCC9445167C569FB"
+              "sha1": "25FB1AECD92925F70EB6BBCDA7F41B305A5758BF"
             }
           ]
         }
       },
       "changelog": {
+        "2.0.1": ["Pemberian contoh penulisan yang benar"],
         "2.0.0": ["Penambahan GUI dan fungsi templater"],
         "1.1.1": ["Penambahan DependencyControl"]
       }
