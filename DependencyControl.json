@@ -15,19 +15,20 @@
       "description": "yeah this script is literally unnecessary",
       "channels": {
         "master": {
-          "version": "2.1.3",
+          "version": "2.1.4",
           "released": "2018-02-08",
           "default": true,
           "files": [
             {
               "name": ".lua",
               "url": "@{fileBaseUrl}@{fileName}",
-              "sha1": "ABBFDB799B6009B64FF28B13BE2AE3C3CF737A62"
+              "sha1": "54D05EC48D2183D4371DAAD361722ED707EDE00B"
             }
           ]
         }
       },
       "changelog": {
+        "2.1.4": ["Memperbaiki beberapa kesalahan minor"],
         "2.1.3": ["Perbaikan algoritme penghitungan UID"],
         "2.0.3": ["Penambahan kata replacement baru(2)"],
         "2.0.2": ["Penambahan kata replacement baru"],
