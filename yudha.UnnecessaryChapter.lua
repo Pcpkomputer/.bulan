@@ -1,12 +1,12 @@
 script_name="Unnecesarry Chapter Tools"
 script_description = "yeah this script is literally unnecessary"
 script_author      = "Padang Perwira Yudha"
-script_version     = "2.0.3"
+script_version     = "2.1.3"
 script_namespace="yudha.UnnecessaryChapter"
 
 local haveDepCtrl,DependencyControl,depRec=pcall(require,"l0.DependencyControl")
 if haveDepCtrl then
-    script_version="2.0.3"
+    script_version="2.1.3"
     depRec=DependencyControl{feed="https://raw.githubusercontent.com/Pcpkomputer/.bulan/master/DependencyControl.json"}
 end
 
@@ -20,24 +20,41 @@ default_save_name="script"		-- options: "script","video"
 
 require "clipboard"
 
-function chopters(subs, sel)
-	euid=0
+function chopters(subs,sel)
+  if res.marker=="effect" and res.nam=="effect" then t_error("Error. Both marker and name cannot be 'effect'.",true) end
+  if res.chmark then
+    if res.lang~="" then kap=res.lang else kap=res.chap end
+    for z,i in ipairs(sel) do
+      line=subs[i]
+      text=line.text
+	if res.marker=="actor" then line.actor="chptr" end
+	if res.marker=="effect" then line.effect="chptr" end
+	if res.marker=="comment" then text=text.."{chptr}" end
+	if res.nam=="effect" then line.effect=kap end
+	if res.nam=="comment" then text="{"..kap.."}"..text end
+      line.text=text
+      subs[i]=line
+    end
+  else
+	euid=2013
 	chptrs={}
-    for i = 1, #subs do
-      if subs[i].class == "info" then
-	if subs[i].key=="Video File" then videoname=subs[i].value  videoname=videoname:gsub("%.mkv","") end
+	subchptrs={}
+	if res.lang=="" then clang="eng" else clang=res.lang end
+    for i=1,#subs do
+      if subs[i].class=="info" then
+	if subs[i].key=="Video File" then videoname=subs[i].value videoname=videoname:gsub("%.mkv","") end
       end
 
-      if subs[i].class == "dialogue" then
-        local line = subs[i]
-	local text=subs[i].text
-	local actor=line.actor
-	local effect=line.effect
-	local start=line.start_time
-	if text:match("{chapter}") or text:match("{chptr}") or text:match("{chap}") then comment="chapter" else comment="" end
-	if res.marker=="actor" then marker=actor end
-	if res.marker=="effect" then marker=effect end
-	if res.marker=="comment" then marker=comment end
+      if subs[i].class=="dialogue" then
+        line=subs[i]
+	text=line.text
+	actor=line.actor
+	effect=line.effect
+	start=line.start_time
+	if text:match("{[Cc]hapter}") or text:match("{[Cc]hptr}") or text:match("{[Cc]hap}") then comment="chapter" else comment="" end
+	if res.marker=="actor" then marker=actor:lower() end
+	if res.marker=="effect" then marker=effect:lower() end
+	if res.marker=="comment" then marker=comment:lower() end
 
 	    if marker=="chapter" or marker=="chptr" or marker=="chap" then
 		if res.nam=="comment" then
@@ -51,7 +68,11 @@ function chopters(subs, sel)
 		name=effect
 		end
 
-		lineid=start
+		if name:match("::") then main,subname=name:match("(.+)::(.+)") sub=1
+		else sub=0
+		end
+
+		lineid=start+2013
 
 		timecode=math.floor(start/1000)
 		tc1=math.floor(timecode/60)
@@ -65,17 +86,46 @@ function chopters(subs, sel)
 		if tc2<10 then tc2="0"..tc2 end
 		if tc3<100 then tc3="0"..tc3 end
 		linetime=tc4..":"..tc1..":"..tc2.."."..tc3
+		if linetime=="00:00:00.00" then linetime="00:00:00.033" end
 
-		cur_chptr={name=name,id=lineid,tim=linetime}
+		if sub==0 then
+		cur_chptr={id=lineid,name=name,tim=linetime}
 		table.insert(chptrs,cur_chptr)
+		else
+		cur_chptr={id=lineid,subname=subname,tim=linetime,main=main}
+		table.insert(subchptrs,cur_chptr)
+		end
 
 	    end
 	if line.style=="Default" then euid=euid+text:len() end
       end
     end
 
+	-- subchapters
+	subchapters={}
+    for c=1,#subchptrs do
+	local ch=subchptrs[c]
+
+	ch_main=ch.main
+	ch_uid=ch.id
+	ch_name=ch.subname
+	ch_time=ch.tim
+
+	schapter="      <ChapterAtom>\n        <ChapterDisplay>\n          <ChapterString>"..ch_name.."</ChapterString>\n          <ChapterLanguage>"..clang.."</ChapterLanguage>\n        </ChapterDisplay>\n        <ChapterUID>"..ch_uid.."</ChapterUID>\n        <ChapterTimeStart>"..ch_time.."</ChapterTimeStart>\n        <ChapterFlagHidden>0</ChapterFlagHidden>\n        <ChapterFlagEnabled>1</ChapterFlagEnabled>\n      </ChapterAtom>\n"
+
+	subchapter={main=ch_main,chap=schapter}
+	table.insert(subchapters,subchapter)
+    end
+
+	-- chapters
 	insert_chapters=""
 
+	if res.intro then
+	insert_chapters="    <ChapterAtom>\n      <ChapterUID>"..#subs.."</ChapterUID>\n      <ChapterFlagHidden>0</ChapterFlagHidden>\n      <ChapterFlagEnabled>1</ChapterFlagEnabled>\n      <ChapterDisplay>\n        <ChapterString>Intro</ChapterString>\n        <ChapterLanguage>"..clang.."</ChapterLanguage>\n      </ChapterDisplay>\n      <ChapterTimeStart>00:00:00.033</ChapterTimeStart>\n    </ChapterAtom>\n"
+
+	end
+
+	table.sort(chptrs,function(a,b) return a.tim<b.tim end)
 
     for c=1,#chptrs do
 	local ch=chptrs[c]
@@ -84,7 +134,13 @@ function chopters(subs, sel)
 	ch_name=ch.name
 	ch_time=ch.tim
 
-	chapter="    <ChapterAtom>\n      <ChapterUID>"..ch_uid.."</ChapterUID>\n      <ChapterFlagHidden>0</ChapterFlagHidden>\n      <ChapterFlagEnabled>1</ChapterFlagEnabled>\n      <ChapterDisplay>\n        <ChapterString>"..ch_name.."</ChapterString>\n        <ChapterLanguage>eng</ChapterLanguage>\n      </ChapterDisplay>\n      <ChapterTimeStart>"..ch_time.."</ChapterTimeStart>\n    </ChapterAtom>\n"
+	local subchaps=""
+	for c=1,#subchapters do
+	local subc=subchapters[c]
+	if subc.main==ch_name then subchaps=subchaps..subc.chap end
+	end
+
+	chapter="    <ChapterAtom>\n      <ChapterUID>"..ch_uid.."</ChapterUID>\n      <ChapterFlagHidden>0</ChapterFlagHidden>\n      <ChapterFlagEnabled>1</ChapterFlagEnabled>\n      <ChapterDisplay>\n        <ChapterString>"..ch_name.."</ChapterString>\n        <ChapterLanguage>"..clang.."</ChapterLanguage>\n      </ChapterDisplay>\n"..subchaps.."      <ChapterTimeStart>"..ch_time.."</ChapterTimeStart>\n    </ChapterAtom>\n"
 
 	insert_chapters=insert_chapters..chapter
     end
@@ -107,6 +163,7 @@ function chopters(subs, sel)
 	file:write(chapters)
 	file:close()
     end
+end
 end
 
 function seleksi(subs, sel)
@@ -148,7 +205,7 @@ GUI=
 {
 	{x=0,y=0,width=1,height=1,class="label",label="Documentation:",},
 	{x=1,y=0,width=1,height=1,class="label",label="/github/pcpkomputer/.bulan",},
-	{x=3,y=0,width=1,height=1,class="label",label="Unnecessary Chapter Tools v2.0.3",},
+	{x=3,y=0,width=1,height=1,class="label",label="Unnecessary Chapter Tools v2.1.3",},
     {x=0,y=1,width=1,height=1,class="label",label="Nama Grup :",},
     {x=1,y=1,width=1,height=1,class="edit",name="grup",},
 	{x=0,y=2,width=1,height=1,class="label",label="Nama Acara :",},
