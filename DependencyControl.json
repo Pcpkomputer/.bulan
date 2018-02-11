@@ -7,6 +7,29 @@
   "url": "@{baseUrl}",
   "maintainer": "Pcpkomputer",
   "macros": {
+      "yudha.SCXvid": {
+      "url": "@{baseUrl}#@{namespace}",
+      "author": "Padang Perwira Yudha",
+      "name": "SCXvid v1.0.0",
+      "description": "GUI for SCXvid avisynth",
+      "channels": {
+        "master": {
+          "version": "1.0.0",
+          "released": "2018-02-11",
+          "default": true,
+          "files": [
+            {
+              "name": ".lua",
+              "url": "@{fileBaseUrl}@{fileName}",
+              "sha1": "CF2AA74AE3A5D7C20F39D09ED068546875C68BF3"
+            }
+          ]
+        }
+      },
+      "changelog": {
+        "1.0.0": ["Mengunggah ke repository"]
+      }
+    },
     
      "yudha.UnnecessaryChapter": {
       "url": "@{baseUrl}#@{namespace}",
