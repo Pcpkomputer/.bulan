@@ -10,23 +10,24 @@
       "yudha.SCXvid": {
       "url": "@{baseUrl}#@{namespace}",
       "author": "Padang Perwira Yudha",
-      "name": "SCXvid v1.0.0",
+      "name": "SCXvid",
       "description": "GUI for SCXvid avisynth",
       "channels": {
         "master": {
-          "version": "1.0.0",
+          "version": "1.0.2",
           "released": "2018-02-11",
           "default": true,
           "files": [
             {
               "name": ".lua",
               "url": "@{fileBaseUrl}@{fileName}",
-              "sha1": "CF2AA74AE3A5D7C20F39D09ED068546875C68BF3"
+              "sha1": "3696AD0B9A404AB928E3911061185B7321F7B114"
             }
           ]
         }
       },
       "changelog": {
+        "1.0.2": ["Fix beberapa typos"],
         "1.0.0": ["Mengunggah ke repository"]
       }
     },
