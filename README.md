@@ -2,7 +2,7 @@
 ## yudha.SCXvid
 ![alt text](https://scontent.fcgk2-1.fna.fbcdn.net/v/t1.0-9/28055812_2003294686353344_5810105517223187434_n.jpg?oh=527cfd7e9d6500913ad80e3c876652d6&oe=5B199122 "when lazinezz bring innovation")
 ### Budayakan membaca :
-#### Untuk menggunakan skrip ini wajib mmemenuhi persyaratan di bawah ini :
+#### Untuk menggunakan skrip ini wajib memenuhi persyaratan di bawah ini :
 ```
 1.) Install avisynth 
 (http://downloads.sourceforge.net/project/avisynth2/AviSynth%202.5/AviSynth%202.5.8/Avisynth_258.exe)
