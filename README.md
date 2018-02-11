@@ -12,7 +12,7 @@
 ----------------------------------------------------------------------------------------------
 kemudian pindahkan kedua file tersebut ke dalam direktori plugin di dalam direktori avisynth
 ----------------------------------------------------------------------------------------------
-3.) Unduh AVSMeter 
+3.) Unduh AVSMeter [Pakai yang 32bit/x86]
 (https://github.com/terrificsubs/terrificsubs.github.io/raw/master/i/AVSMeter178.zip) 
 ----------------------------------------------------------------------------------------------
 kemudian copy-kan ke C:/Windows/
