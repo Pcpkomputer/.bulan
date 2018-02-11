@@ -1,12 +1,12 @@
 script_name="SCXvid"
 script_description="GUI for SCXvid avisynth"
 script_author="Padang Perwira Yudha"
-script_version="1.0.1"
+script_version="1.0.2"
 script_namespace="yudha.SCXvid"
 
 local haveDepCtrl,DependencyControl,depRec=pcall(require,"l0.DependencyControl")
 if haveDepCtrl then
-    script_version="1.0.1"
+    script_version="1.0.2"
     depRec=DependencyControl{feed="https://raw.githubusercontent.com/Pcpkomputer/.bulan/master/DependencyControl.json"}
 end
 
