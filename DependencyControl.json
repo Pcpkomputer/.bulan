@@ -7,6 +7,30 @@
   "url": "@{baseUrl}",
   "maintainer": "Pcpkomputer",
   "macros": {
+          "yudha.Perspective": {
+      "url": "@{baseUrl}#@{namespace}",
+      "author": "Padang Perwira Yudha",
+      "name": "Perspective",
+      "description": "Script that finds .ass perspective for a known rectangle->tetragon projection",
+      "channels": {
+        "master": {
+          "version": "1.0.0",
+          "released": "2018-02-12",
+          "default": true,
+          "files": [
+            {
+              "name": ".lua",
+              "url": "@{fileBaseUrl}@{fileName}",
+              "sha1": "0B14682D59D87B43BB9C681941C74E582882163F"
+            }
+          ]
+        }
+      },
+      "changelog": {
+        "1.0.0": ["Mengunggah ke repository"]
+      }
+    },
+    
       "yudha.SCXvid": {
       "url": "@{baseUrl}#@{namespace}",
       "author": "Padang Perwira Yudha",
