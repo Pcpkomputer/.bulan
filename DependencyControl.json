@@ -14,19 +14,20 @@
       "description": "Script that finds .ass perspective for a known rectangle->tetragon projection",
       "channels": {
         "master": {
-          "version": "1.0.0",
+          "version": "1.4.0",
           "released": "2018-02-12",
           "default": true,
           "files": [
             {
               "name": ".lua",
               "url": "@{fileBaseUrl}@{fileName}",
-              "sha1": "0B14682D59D87B43BB9C681941C74E582882163F"
+              "sha1": "E3C1A10A8DEFD59CD015135646FE7EAA5221B029"
             }
           ]
         }
       },
       "changelog": {
+        "1.4.0": ["Menambahkan fungsi replacer & auto return ke fungsi main()"],
         "1.0.0": ["Mengunggah ke repository"]
       }
     },
