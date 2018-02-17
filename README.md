@@ -12,9 +12,8 @@
 ----------------------------------------------------------------------------------------------
 kemudian pindahkan kedua file ke C:/Windows/
 ----------------------------------------------------------------------------------------------
-3.) Buka CMD kemudian ketikkan perintah di bawah ini satu-satu untuk install library yang dibutuhkan
+3.) Buka CMD kemudian ketikkan perintah di bawah ini untuk install library yang dibutuhkan
 ----------------------------------------------------------------------------------------------
-pip install -U textblob
 pip install BeautifulSoap4
 ----------------------------------------------------------------------------------------------
 Enjoy!
