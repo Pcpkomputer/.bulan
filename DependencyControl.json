@@ -7,6 +7,31 @@
   "url": "@{baseUrl}",
   "maintainer": "Pcpkomputer",
   "macros": {
+    
+          "yudha.Leksikon": {
+      "url": "@{baseUrl}#@{namespace}",
+      "author": "Padang Perwira Yudha",
+      "name": "Leksikon",
+      "description": "Skrip GUI untuk melakukan eksekusi CLI aegiPy",
+      "channels": {
+        "master": {
+          "version": "1.0.0",
+          "released": "2018-02-17",
+          "default": true,
+          "files": [
+            {
+              "name": ".lua",
+              "url": "@{fileBaseUrl}@{fileName}",
+              "sha1": "07C3247C6A7D968E6A8B6C9BE5EF39C06C9537C7"
+            }
+          ]
+        }
+      },
+      "changelog": {
+        "1.0.0": ["Mengunggah ke repository"]
+      }
+    },
+    
           "yudha.Perspective": {
       "url": "@{baseUrl}#@{namespace}",
       "author": "Padang Perwira Yudha",
