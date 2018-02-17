@@ -1,6 +1,7 @@
 # Skrip Otomisasi
 ## yudha.Leksikon
 ![alt text](https://scontent.fcgk2-1.fna.fbcdn.net/v/t1.0-9/27971738_2010678352281644_3665678426629512789_n.jpg?oh=075adeb20209d68351bda8d39ec79238&oe=5B26C462 "when lazinezz bring innovation")
+![alt text](https://scontent.fsub5-1.fna.fbcdn.net/v/t1.0-9/28166314_2010719012277578_5360850642467153673_n.jpg?oh=aea5dd2d8fa1d7764a1b3f12006794ab&oe=5B1EE902 "when lazinezz bring innovation")
 ### Budayakan membaca :
 #### Untuk menggunakan skrip ini wajib memenuhi persyaratan di bawah ini :
 ```
