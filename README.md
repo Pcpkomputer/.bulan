@@ -1,4 +1,24 @@
 # Skrip Otomisasi
+## yudha.Leksikon
+![alt text](https://scontent.fcgk2-1.fna.fbcdn.net/v/t1.0-9/27971738_2010678352281644_3665678426629512789_n.jpg?oh=075adeb20209d68351bda8d39ec79238&oe=5B26C462 "when lazinezz bring innovation")
+### Budayakan membaca :
+#### Untuk menggunakan skrip ini wajib memenuhi persyaratan di bawah ini :
+```
+1.) Install Phython36
+(https://www.python.org/ftp/python/3.6.4/python-3.6.4.exe)
+2.) Unduh kbbi5.py dan sinonim.py
+(https://github.com/Pcpkomputer/aegiPy/raw/master/kbbi5.py)
+(https://github.com/Pcpkomputer/aegiPy/raw/master/sinonim.py)
+----------------------------------------------------------------------------------------------
+kemudian pindahkan kedua file ke C:/Windows/
+----------------------------------------------------------------------------------------------
+3.) Buka CMD kemudian ketikkan perintah di bawah ini satu-satu untuk install library yang dibutuhkan
+----------------------------------------------------------------------------------------------
+pip install -U textblob
+pip install BeautifulSoap4
+----------------------------------------------------------------------------------------------
+Enjoy!
+```
 ## yudha.Perspective
 ![alt text](https://scontent.fcgk2-1.fna.fbcdn.net/v/t1.0-9/27751499_2004187602930719_34068474264939712_n.jpg?oh=cc0b80ea793caf74bfdc357a84e0d1d1&oe=5ADD22E8 "when lazinezz bring innovation")
 ### Budayakan membaca :
