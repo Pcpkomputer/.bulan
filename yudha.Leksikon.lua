@@ -65,7 +65,7 @@ function main(subs,sel)
 
 	GUI=
 {
-	{x=0,y=0,width=1,height=1,class="label",label="Versi 1.0.0",},
+	{x=0,y=0,width=1,height=1,class="label",label="Versi 1.2.0",},
 	{x=1,y=0,width=1,height=1,class="label",label="[  Spasi = %%20  ]",},
 	{x=0,y=1,width=1,height=1,class="checkbox",name="wikicek",label="Wikipedia",},
 	{x=1,y=1,width=1,height=1,class="edit",name="wikipedia",},
