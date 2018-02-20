@@ -28,7 +28,7 @@
         }
       },
       "changelog": {
-        "1.2.0": ["Peremajaan GUI dengan checkbox dan penambahan fungsi skrip baru aegiPy"]
+        "1.2.0": ["Peremajaan GUI dengan checkbox dan penambahan fungsi skrip baru aegiPy"],
         "1.0.0": ["Mengunggah ke repository"]
       }
     },
