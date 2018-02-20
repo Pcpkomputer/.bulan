@@ -15,19 +15,20 @@
       "description": "Skrip GUI untuk melakukan eksekusi CLI aegiPy",
       "channels": {
         "master": {
-          "version": "1.0.0",
+          "version": "1.2.0",
           "released": "2018-02-17",
           "default": true,
           "files": [
             {
               "name": ".lua",
               "url": "@{fileBaseUrl}@{fileName}",
-              "sha1": "07C3247C6A7D968E6A8B6C9BE5EF39C06C9537C7"
+              "sha1": "668233354AC1278705B2638952025D382989EB64"
             }
           ]
         }
       },
       "changelog": {
+        "1.2.0": ["Peremajaan GUI dengan checkbox dan penambahan fungsi skrip baru aegiPy"]
         "1.0.0": ["Mengunggah ke repository"]
       }
     },
