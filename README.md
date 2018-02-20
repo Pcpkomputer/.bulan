@@ -14,7 +14,7 @@
 (https://github.com/Pcpkomputer/aegiPy/raw/master/wikipedia.py)
 (https://github.com/Pcpkomputer/aegiPy/raw/master/antonim.py)
 ----------------------------------------------------------------------------------------------
-kemudian pindahkan kedua file ke C:/Windows/
+kemudian pindahkan semua file tersebut ke C:/Windows/
 ----------------------------------------------------------------------------------------------
 3.) Buka CMD kemudian ketikkan perintah di bawah ini untuk install library yang dibutuhkan
 ----------------------------------------------------------------------------------------------
