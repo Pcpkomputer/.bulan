@@ -9,10 +9,10 @@
 1.) Install Phython36
 (https://www.python.org/ftp/python/3.6.4/python-3.6.4.exe)
 2.) Unduh kbbi5.py, sinonim.py, wikipedia.py, dan antonim.py
-(https://github.com/Pcpkomputer/aegiPy/raw/master/kbbi5.py)
-(https://github.com/Pcpkomputer/aegiPy/raw/master/sinonim.py)
-(https://github.com/Pcpkomputer/aegiPy/raw/master/wikipedia.py)
-(https://github.com/Pcpkomputer/aegiPy/raw/master/antonim.py)
+(https://github.com/Pcpkomputer/aegiPy/raw/master/scrapper/kbbi5.py)
+(https://github.com/Pcpkomputer/aegiPy/raw/master/scrapper/sinonim.py)
+(https://github.com/Pcpkomputer/aegiPy/raw/master/scrapper/wikipedia.py)
+(https://github.com/Pcpkomputer/aegiPy/raw/master/scrapper/antonim.py)
 ----------------------------------------------------------------------------------------------
 kemudian pindahkan semua file tersebut ke C:/Windows/
 ----------------------------------------------------------------------------------------------
