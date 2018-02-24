@@ -1,13 +1,19 @@
 script_name="Perspective"
 script_description = "Script that finds .ass perspective for a known rectangle->tetragon projection"
 script_author      = "Padang Perwira Yudha"
-script_version     = "1.4.0"
+script_version     = "1.4.2"
 script_namespace="yudha.Perspective"
 
 local haveDepCtrl,DependencyControl,depRec=pcall(require,"l0.DependencyControl")
 if haveDepCtrl then
-   script_version="1.4.0"
+   script_version="1.4.2"
     depRec=DependencyControl{feed="https://raw.githubusercontent.com/Pcpkomputer/.bulan/master/DependencyControl.json"}
+end
+
+function pesanerot(message,cancel)
+ADD=aegisub.dialog.display
+ADD({{class="label",label=message}},{"OK"},{close='OK'})
+if cancel then aegisub.cancel() end
 end
 
 function main(subs, sel)
@@ -24,13 +30,14 @@ function main(subs, sel)
 		tags=text:match("\\i?clip%([^%)]-%)")
 		tags1=text:match("\\i?clip%([^%)]-%)")
 		end
+		if tags==nil or tags=="" then pesanerot("Enggak ada koordinatnya goblok!",1) end
 		hasil=tags
 		:gsub("\\i?clip%(","<")
 		:gsub("%)",">")
 ADD=aegisub.dialog.display
 GUI=
 {
-	{x=0,y=0,width=1,height=1,class="label",label="Versi 1.4.0",},
+	{x=0,y=0,width=1,height=1,class="label",label="Versi 1.4.2",},
     {x=0,y=1,width=1,height=1,class="label",label="Koordinat :",},
     {x=1,y=1,width=1,height=1,class="edit",name="coor", value=""..hasil.."",},
 	{x=0,y=2,width=1,height=1,class="label",label="Rasio :",},
@@ -69,9 +76,7 @@ if res["cekorigin"] and res["cekscale"] then
 skrup="perspective.py \""..res.coor.."\" -r "..res.ras.." -o "..res.orz.." -s "..res.ras.."\n@pause" end
 
 --
-if P=="Kembali" then    aegisub.cancel() end
-if hasil==nil or hasil=="" or tags==nil then t_error("Enggak ada koordinatnya goblok!",1) end
-end
+if P=="Kembali" then aegisub.cancel() end
 if P=="Proses" then
 crot=vpath.."temp.bat"
 
@@ -84,11 +89,6 @@ crot=crot:gsub("%=","^=")
 os.execute(crot)
 main(subs, sel)
 end
------
-function t_error(message,cancel)
-ADD=aegisub.dialog.display
-ADD({{class="label",label=message}},{"OK"},{close='OK'})
-if cancel then aegisub.cancel() end
 end
 -----
 function quo(x) x="\""..x.."\"" return x end
@@ -98,4 +98,3 @@ end
 -----
 
 if haveDepCtrl then depRec:registerMacro(main) else aegisub.register_macro(script_name,script_description,main) end
-
