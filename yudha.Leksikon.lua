@@ -1,13 +1,13 @@
 script_name="Leksikon"
 script_description = "Skrip GUI untuk melakukan eksekusi CLI aegiPy"
 script_author      = "Padang Perwira Yudha"
-script_version     = "1.2.0"
+script_version     = "1.2.5"
 script_namespace="yudha.Leksikon"
 
 
 local haveDepCtrl,DependencyControl,depRec=pcall(require,"l0.DependencyControl")
 if haveDepCtrl then
-   script_version="1.2.0"
+   script_version="1.2.5"
     depRec=DependencyControl{feed="https://raw.githubusercontent.com/Pcpkomputer/.bulan/master/DependencyControl.json"}
 end
 
@@ -20,7 +20,8 @@ function serang(subs,sel)
 ------------------------------------------------------------------
 
 	if res["wikicek"] then
-	skrup="wikipedia.py -k "..tampung1.."\n@pause"
+	tampung1_go=tampung1:gsub(tampung1,"\""..tampung1.."\"")
+	skrup="wikipedia.py -k "..tampung1_go.."\n@pause"
 	crot=vpath.."temp.bat"
 	local pl0x=io.open(vpath.."temp.bat","w")
 	pl0x:write(skrup)
@@ -28,7 +29,8 @@ function serang(subs,sel)
 	progres(subs,sel)
 ------------------------------------------------------------------
 	elseif res["kbbicek"] then
-	skrup="kbbi5.py -k "..tampung2.."\n@pause"
+	tampung2_go=tampung2:gsub(tampung2,"\""..tampung2.."\"")
+	skrup="kbbi5.py -k "..tampung2_go.."\n@pause"
 	crot=vpath.."temp.bat"
 	local pl0x=io.open(vpath.."temp.bat","w")
 	pl0x:write(skrup)
@@ -36,7 +38,8 @@ function serang(subs,sel)
 	progres(subs,sel)
 ------------------------------------------------------------------
 	elseif res["sinonimcek"] then
-	skrup="sinonim.py -k "..tampung3.."\n@pause"
+	tampung3_go=tampung2:gsub(tampung3,"\""..tampung3.."\"")
+	skrup="sinonim.py -k "..tampung3_go.."\n@pause"
 	crot=vpath.."temp.bat"
 	local pl0x=io.open(vpath.."temp.bat","w")
 	pl0x:write(skrup)
@@ -44,7 +47,8 @@ function serang(subs,sel)
 	progres(subs,sel)
 -----------------------------------------------------------------
 	elseif res["antonimcek"] then
-	skrup="antonim.py -k "..tampung4.."\n@pause"
+	tampung4_go=tampung4:gsub(tampung4,"\""..tampung4.."\"")
+	skrup="antonim.py -k "..tampung4_go.."\n@pause"
 	crot=vpath.."temp.bat"
 	local pl0x=io.open(vpath.."temp.bat","w")
 	pl0x:write(skrup)
@@ -65,8 +69,7 @@ function main(subs,sel)
 
 	GUI=
 {
-	{x=0,y=0,width=1,height=1,class="label",label="Versi 1.2.0",},
-	{x=1,y=0,width=1,height=1,class="label",label="[  Spasi = %%20  ]",},
+	{x=0,y=0,width=1,height=1,class="label",label="Versi 1.2.5",},
 	{x=0,y=1,width=1,height=1,class="checkbox",name="wikicek",label="Wikipedia",},
 	{x=1,y=1,width=1,height=1,class="edit",name="wikipedia",},
 	{x=0,y=2,width=1,height=1,class="checkbox",name="kbbicek",label="KBBI V",},
