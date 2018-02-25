@@ -15,19 +15,20 @@
       "description": "Skrip GUI untuk melakukan eksekusi CLI aegiPy",
       "channels": {
         "master": {
-          "version": "1.2.0",
+          "version": "1.2.5",
           "released": "2018-02-17",
           "default": true,
           "files": [
             {
               "name": ".lua",
               "url": "@{fileBaseUrl}@{fileName}",
-              "sha1": "5E82BE8D22AFBF4D56B30060A0034833E31EBC06"
+              "sha1": "D6C779E2DAD7CD201564BEFB443695175C0CB416"
             }
           ]
         }
       },
       "changelog": {
+        "1.2.5": ["Fix penulisan argument; sekarang sudah support whitespaces / spasi"],
         "1.2.0": ["Peremajaan GUI dengan checkbox dan penambahan fungsi skrip baru aegiPy"],
         "1.0.0": ["Mengunggah ke repository"]
       }
