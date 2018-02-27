@@ -22,12 +22,13 @@
             {
               "name": ".lua",
               "url": "@{fileBaseUrl}@{fileName}",
-              "sha1": "D6C779E2DAD7CD201564BEFB443695175C0CB416"
+              "sha1": "4507E869502579F025CB51F2A1FF20144CC7C4B9"
             }
           ]
         }
       },
       "changelog": {
+        "1.3.0": ["Typo bangsat...."],
         "1.2.5": ["Fix penulisan argument; sekarang sudah support whitespaces / spasi"],
         "1.2.0": ["Peremajaan GUI dengan checkbox dan penambahan fungsi skrip baru aegiPy"],
         "1.0.0": ["Mengunggah ke repository"]
