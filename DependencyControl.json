@@ -148,19 +148,20 @@
       "description": "Melakukan perubahan pada ejaan yang sering salah ditulis",
       "channels": {
         "master": {
-          "version": "1.0.0",
+          "version": "1.0.2",
           "released": "2018-02-07",
           "default": true,
           "files": [
             {
               "name": ".lua",
               "url": "@{fileBaseUrl}@{fileName}",
-              "sha1": "D1D3690735AC2BA5F4EEDAE49247DDEA6D34E132"
+              "sha1": "66E64429812AAE048B555017A721995D765FAC3C"
             }
           ]
         }
       },
       "changelog": {
+        "1.0.2": ["Tidak ada yang spesial h3h3h3h3"],
         "1.0.0": ["Mengunggah skrip ke repository"]
       }
     }
