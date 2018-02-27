@@ -1,12 +1,12 @@
 script_name="KBBI 5 Koreksi Otomatis"
 script_description = "Melakukan perubahan pada ejaan yang sering salah ditulis [Based MaxFireHeart Script]"
 script_author      = "Padang Perwira Yudha"
-script_version     = "1.0.2"
+script_version     = "1.0.4"
 script_namespace="yudha.KBBI"
 
 local haveDepCtrl,DependencyControl,depRec=pcall(require,"l0.DependencyControl")
 if haveDepCtrl then
-    script_version="1.0.2"
+    script_version="1.0.4"
     depRec=DependencyControl{feed="https://raw.githubusercontent.com/Pcpkomputer/.bulan/master/DependencyControl.json"}
 end
 
@@ -21,7 +21,7 @@ function kbbi_seleksi(subs, sel)
 		:gsub("terlanjur","telanjur{*terlanjur}")
 		:gsub("terlantar","telantar{*terlantar}")
 		:gsub("frustasi","frustrasi{*frustasi}")
-		:gsub("bis","bus{*bis}")
+		:gsub("%sbis%s"," bus{*bis} ")
 		:gsub("coklat","cokelat{*cokelat}")
 		:gsub("hembus","embus{*hembus}")
 		:gsub("goa","gua{*goa}")
@@ -214,7 +214,7 @@ function kbbi_seleksi(subs, sel)
 		:gsub("menghadang","mengadang{*menghadang}")
 		:gsub("hujam","hunjam{*hujam}")
 		:gsub("menghujam","menghunjam{*menghujam}")
-		:gsub("rubah","ubah{*rubah}")
+		--:gsub("rubah","ubah{*rubah}")
 		:gsub("merubah","mengubah{*merubah}")
 		:gsub("hulu balang","hulubalang{*hulu balang}")
 		:gsub("mana kala","manakala{*mana kala}")
@@ -238,7 +238,7 @@ function kbbi_seleksi(subs, sel)
 		:gsub("Terlanjur","Telanjur{*terlanjur}")
 		:gsub("Terlantar","Telantar{*terlantar}")
 		:gsub("Frustasi","Frustrasi{*frustasi}")
-		:gsub("Bis","Bus{*bis}")
+		:gsub("%sBis%s"," Bus{*bis} ")
 		:gsub("Coklat","Cokelat{*cokelat}")
 		:gsub("Hembus","Embus{*hembus}")
 		:gsub("Goa","Gua{*goa}")
@@ -431,7 +431,7 @@ function kbbi_seleksi(subs, sel)
 		:gsub("Menghadang","Mengadang{*menghadang}")
 		:gsub("Hujam","Hunjam{*hujam}")
 		:gsub("Menghujam","Menghunjam{*menghujam}")
-		:gsub("Rubah","Ubah{*rubah}")
+		--:gsub("Rubah","Ubah{*rubah}")
 		:gsub("Merubah","Mengubah{*merubah}")
 		:gsub("Hulu balang","Hulubalang{*hulu balang}")
 		:gsub("Mana kala","Manakala{*mana kala}")
@@ -471,7 +471,7 @@ function kbbi(subs)
 		:gsub("terlanjur","telanjur{*terlanjur}")
 		:gsub("terlantar","telantar{*terlantar}")
 		:gsub("frustasi","frustrasi{*frustasi}")
-		:gsub("bis","bus{*bis}")
+		:gsub("%sbis%s"," bus{*bis} ")
 		:gsub("coklat","cokelat{*cokelat}")
 		:gsub("hembus","embus{*hembus}")
 		:gsub("goa","gua{*goa}")
@@ -664,7 +664,7 @@ function kbbi(subs)
 		:gsub("menghadang","mengadang{*menghadang}")
 		:gsub("hujam","hunjam{*hujam}")
 		:gsub("menghujam","menghunjam{*menghujam}")
-		:gsub("rubah","ubah{*rubah}")
+		--:gsub("rubah","ubah{*rubah}")
 		:gsub("merubah","mengubah{*merubah}")
 		:gsub("hulu balang","hulubalang{*hulu balang}")
 		:gsub("mana kala","manakala{*mana kala}")
@@ -688,7 +688,7 @@ function kbbi(subs)
 		:gsub("Terlanjur","Telanjur{*terlanjur}")
 		:gsub("Terlantar","Telantar{*terlantar}")
 		:gsub("Frustasi","Frustrasi{*frustasi}")
-		:gsub("Bis","Bus{*bis}")
+		:gsub("%sBis%s"," Bus{*bis} ")
 		:gsub("Coklat","Cokelat{*cokelat}")
 		:gsub("Hembus","Embus{*hembus}")
 		:gsub("Goa","Gua{*goa}")
@@ -881,7 +881,7 @@ function kbbi(subs)
 		:gsub("Menghadang","Mengadang{*menghadang}")
 		:gsub("Hujam","Hunjam{*hujam}")
 		:gsub("Menghujam","Menghunjam{*menghujam}")
-		:gsub("Rubah","Ubah{*rubah}")
+		--:gsub("Rubah","Ubah{*rubah}")
 		:gsub("Merubah","Mengubah{*merubah}")
 		:gsub("Hulu balang","Hulubalang{*hulu balang}")
 		:gsub("Mana kala","Manakala{*mana kala}")
@@ -915,7 +915,7 @@ ADD=aegisub.dialog.display
 GUI=
 {
     {x=0,y=0,width=1,height=1,class="label",label="KBBI 5 Koreksi Otomatis"},
-	{x=13,y=0,width=1,height=1,class="label",label="Versi 1.0.2"},
+	{x=13,y=0,width=1,height=1,class="label",label="Versi 1.0.4"},
 }
 P,res=ADD(GUI,
 {"Terapkan Pada Seluruh Line","Terapkan Pada Line Yang Disorot"})
@@ -926,4 +926,3 @@ aegisub.set_undo_point(script_name)
 end
 
 if haveDepCtrl then depRec:registerMacro(main) else aegisub.register_macro(script_name,script_description,main) end
-
