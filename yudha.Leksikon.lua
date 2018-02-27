@@ -1,7 +1,7 @@
 script_name="Leksikon"
 script_description = "Skrip GUI untuk melakukan eksekusi CLI aegiPy"
 script_author      = "Padang Perwira Yudha"
-script_version     = "1.2.5"
+script_version     = "1.3.0"
 script_namespace="yudha.Leksikon"
 
 
