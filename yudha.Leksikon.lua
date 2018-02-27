@@ -7,7 +7,7 @@ script_namespace="yudha.Leksikon"
 
 local haveDepCtrl,DependencyControl,depRec=pcall(require,"l0.DependencyControl")
 if haveDepCtrl then
-   script_version="1.2.5"
+   script_version="1.3.0"
     depRec=DependencyControl{feed="https://raw.githubusercontent.com/Pcpkomputer/.bulan/master/DependencyControl.json"}
 end
 
@@ -38,7 +38,7 @@ function serang(subs,sel)
 	progres(subs,sel)
 ------------------------------------------------------------------
 	elseif res["sinonimcek"] then
-	tampung3_go=tampung2:gsub(tampung3,"\""..tampung3.."\"")
+	tampung3_go=tampung3:gsub(tampung3,"\""..tampung3.."\"")
 	skrup="sinonim.py -k "..tampung3_go.."\n@pause"
 	crot=vpath.."temp.bat"
 	local pl0x=io.open(vpath.."temp.bat","w")
@@ -69,7 +69,7 @@ function main(subs,sel)
 
 	GUI=
 {
-	{x=0,y=0,width=1,height=1,class="label",label="Versi 1.2.5",},
+	{x=0,y=0,width=1,height=1,class="label",label="Versi 1.3.0",},
 	{x=0,y=1,width=1,height=1,class="checkbox",name="wikicek",label="Wikipedia",},
 	{x=1,y=1,width=1,height=1,class="edit",name="wikipedia",},
 	{x=0,y=2,width=1,height=1,class="checkbox",name="kbbicek",label="KBBI V",},
