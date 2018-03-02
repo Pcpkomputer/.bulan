@@ -1,8 +1,6 @@
 # Skrip Otomisasi
 ## yudha.Leksikon
-![alt text](https://scontent.fcgk2-1.fna.fbcdn.net/v/t1.0-9/27971738_2010678352281644_3665678426629512789_n.jpg?oh=075adeb20209d68351bda8d39ec79238&oe=5B26C462 "when lazinezz bring innovation")
-![alt text](https://scontent.fcgk2-1.fna.fbcdn.net/v/t1.0-9/27973286_2014192271930252_1521448710446223182_n.jpg?oh=f28c45776d6ef2f376d7cd9537b0b66d&oe=5B239408 "when lazinezz bring innovation")
-![alt text](https://scontent.fsub5-1.fna.fbcdn.net/v/t1.0-9/28166314_2010719012277578_5360850642467153673_n.jpg?oh=aea5dd2d8fa1d7764a1b3f12006794ab&oe=5B1EE902 "when lazinezz bring innovation")
+![alt text](https://scontent.fsub5-1.fna.fbcdn.net/v/t1.0-9/28467740_2025504254132387_3056580151321232676_n.jpg?oh=3e116f6f1657d5652548cc94f8b33db0&oe=5B13AE83 "when lazinezz bring innovation")
 ### Budayakan membaca :
 #### Untuk menggunakan skrip ini wajib memenuhi persyaratan di bawah ini :
 ```
@@ -23,7 +21,7 @@ pip install BeautifulSoap4
 Enjoy!
 ```
 ## yudha.Perspective
-![alt text](https://scontent.fcgk2-1.fna.fbcdn.net/v/t1.0-9/27751499_2004187602930719_34068474264939712_n.jpg?oh=cc0b80ea793caf74bfdc357a84e0d1d1&oe=5ADD22E8 "when lazinezz bring innovation")
+![alt text](https://scontent.fsub5-1.fna.fbcdn.net/v/t1.0-9/28379401_2025505127465633_2684918521228556820_n.jpg?oh=84607c2f496977f9484bdda0a7f9e3bc&oe=5B009C48 "when lazinezz bring innovation")
 ### Budayakan membaca :
 #### Untuk menggunakan skrip ini wajib memenuhi persyaratan di bawah ini :
 ```
@@ -61,21 +59,18 @@ Enjoy!
 
 ## yudha.UnnecessaryChapter
 ### why? Because i'm lazzy as fuck
-![alt text](https://scontent-sit4-1.xx.fbcdn.net/v/t1.0-9/27545666_1999694390046707_1563691307904350182_n.jpg?oh=bfb7400d17d14af072419269fd6ddd08&oe=5AE1E7D6 "when lazinezz bring innovation")
-### v2.0.0
-![alt text](https://scontent-sit4-1.xx.fbcdn.net/v/t1.0-9/27540465_1999829173366562_6691498731313010104_n.jpg?oh=08cf5ed1b873fcbffd425fad03c7286e&oe=5B166A99 "when lazinezz bring innovation")
+![alt text](https://scontent.fsub5-1.fna.fbcdn.net/v/t1.0-9/28468032_2025505810798898_1214057164379983952_n.jpg?oh=65e7bc33be5458423b8908e3c627ae33&oe=5B456B1C "when lazinezz bring innovation")
 ## [Demo](http://terrificsubs.github.io/i/yudha.UnnecessaryChapter.html) 
 ## yudha.SilihOtomatis
+![alt text](https://scontent.fsub5-1.fna.fbcdn.net/v/t1.0-9/28378293_2025506147465531_3414922790310881937_n.jpg?oh=d5a5b1f42b6ce5e189de615ebeef68dc&oe=5B056955 "when lazinezz bring innovation")
 Skrip yang berguna untuk menukar suatu teks berdasarkan suatu pola dari Regular Expression;
 Contoh : {*}Mas Padang{*Padang-kun}
 
 Skrip ini sering saya gunakan dalam pembuatan skrip lokalisasi dan honorifik, untuk pengembangan selanjutnya akan dibuatkan GUI yang diberikan checklist untuk memilih karakter yang digunakan * atau / atau % dsb.
-### v2.0.0
-![alt text](https://scontent.fsub5-1.fna.fbcdn.net/v/t1.0-9/27751720_2001140006568812_5683222731135946573_n.jpg?oh=554cce9c85a0f5e47a251a3adba47325&oe=5B14FA55 "when lazinezz bring innovation")
 ## [Demo](http://terrificsubs.github.io/i/yudha.SilihOtomatis.html) 
 ## yudha.KBBI
 
-![alt text](https://scontent-sit4-1.xx.fbcdn.net/v/t1.0-9/27752502_1998997476783065_6971505429113667725_n.jpg?oh=31a2fe3ef4ec83fa4d67f7c51dedf73f&oe=5ADA66D4 "aaaaaa")
+![alt text](https://scontent.fsub5-1.fna.fbcdn.net/v/t1.0-9/28660745_2025506550798824_4882974824593047581_n.jpg?oh=1c869e3f6b7d4566ba1ce399c01e5c57&oe=5B134591 "aaaaaa")
 
 Skrip yang berguna untuk melakukan perubahan pada ejaan yang sering salah ditulis, pengembangan selanjutnya [2.0.0] akan diberikan function berupa count-line yang berupa report dari keseluruhan line yang salah.
 
