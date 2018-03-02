@@ -63,6 +63,7 @@ Enjoy!
 ## [Demo](http://terrificsubs.github.io/i/yudha.UnnecessaryChapter.html) 
 ## yudha.SilihOtomatis
 ![alt text](https://scontent.fsub5-1.fna.fbcdn.net/v/t1.0-9/28378293_2025506147465531_3414922790310881937_n.jpg?oh=d5a5b1f42b6ce5e189de615ebeef68dc&oe=5B056955 "when lazinezz bring innovation")
+
 Skrip yang berguna untuk menukar suatu teks berdasarkan suatu pola dari Regular Expression;
 Contoh : {*}Mas Padang{*Padang-kun}
 
